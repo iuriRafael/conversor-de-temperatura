@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+    background-color: rgb(241, 30, 238);
+}
+
+
+#titulo {
+    margin-top: 20vh;
+    text-align: center;
+    font-size: 8vh;
+}
+
+.container {
+    font-size: 2.5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.temp{
+    margin: 2vh;
+    display: inline-block;
+    
+}
+
+@media(max-width:960px){
+
+    #titulo{
+     margin-top: 10vh;
+    text-align: center;
+    font-size: 4vh;
+    }
+
+}
+
+    @media(max-width:760px){
+
+    .container{
+        font-size: 2.5vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 6vh;
+    }
+}
+</style>
+<body>
+    <div id="total">
+        <h1 id="titulo"> Conversor de Temperaturas</h1>
+        <div class="container">
+            <div class="temp">
+                <div>
+                    <label for="celsius">ºC</label>
+                </div>
+                <div>
+                    <input type="number" id="celsius">
+                </div>
+            </div>
+           
+            <div class="temp">
+                <div>
+                    <label for="kelvin">ºK</label>
+                </div>
+               <div>
+                    <input type="number" id="kelvin">
+               </div>
+            </div>
+            
+            <div class="temp">
+                <div>
+                    <label for="fahrenheit">ºF</label>
+                </div>
+                <div>
+                    <input type="number" id="fahrenheit">
+                </div>
+            </div>
+
+            <div class="temp">
+                <div>
+                    <label for="rankine">ºR</label>
+                </div>
+                <div>
+                    <input type="number" id="rankine">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="./script.js"></script>
+</html>
